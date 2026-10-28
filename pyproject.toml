@@ -1,0 +1,23 @@
+[build-system]
+requires = ["scikit-build-core>=0.11,<0.12", "pybind11>=3.0,<3.1"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "stellaria-axr"
+version = "1.0.0.dev1"
+description = "Application-independent authorized agent execution transactions"
+requires-python = ">=3.12"
+license = "AGPL-3.0-only OR LicenseRef-Stellaria-Commercial-1.0"
+license-files = ["LICENSE", "LICENSES.md", "NOTICE", "THIRD_PARTY_NOTICES.md", "licenses/*", "legal/Stellaria-CLA-1.0.md"]
+dependencies = ["keyring>=25,<26", "pywin32>=311; sys_platform == 'win32'"]
+
+[project.scripts]
+axr-owner = "axr.owner:main"
+
+[tool.scikit-build]
+wheel.packages = ["axr"]
+cmake.build-type = "Release"
+
+[tool.scikit-build.cmake.define]
+AXR_PYTHON = "ON"
+BUILD_TESTING = "OFF"

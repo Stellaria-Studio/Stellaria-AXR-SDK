@@ -1,0 +1,12 @@
+# Changelog
+
+## 2026-10-28 · Independent SDK and dual licensing
+
+- Extracted the SDK from upstream `AXR/` at `af3bec927a651e2bbb7d77b2d2e7924a606fd708`, including the current Windows primitives; no application database, account state, business adapter or binary application was imported.
+- Added Chinese/English product documentation, CMake consumer and synthetic Python examples, platform/build guidance, source provenance and explicit deployment compatibility boundaries.
+- SDK-owned source now offers `AGPL-3.0-only OR LicenseRef-Stellaria-Commercial-1.0`, on the rights holder's confirmation. Preserved the complete supplied SCL and CLA, byte-identical DOCX originals, SHA-256 provenance, readable transcriptions and third-party notices. A separately effective SCL agreement is required; the framework is not a blanket proprietary grant. Contributions require effective CLA execution and identifiable acceptance, not a checkbox.
+- Serialized operations on one Guard instance. SQLite FULLMUTEX alone did not serialize the multi-statement quota transaction: the new eight-thread regression reproduced unexpected transaction errors before the fix and now consumes exactly the authorized quota.
+- Reused policy-version verification and immutable action calculations within one locked lookup/read snapshot. No permission cache persists across calls; grant MACs, mutable quota MACs, expiry, source classes, exact intent and fresh commit revalidation remain enforced.
+- Added a reproducible 1,000-active-grant synthetic benchmark. Local Release A/B/B/A medians averaged 11.031 ms before and 6.691 ms after (about 39.3% lower latency). This is a lookup microbenchmark, not end-to-end Agent throughput, power or platform qualification.
+- Local validation: native reference and formal profiles each passed 3/3 CTests; Python SDK tests passed 129 with 4 platform skips and 28 subtests. macOS helper/embedded-host compilation and installed CMake consumer execution passed. Legal source verification passed. Wheel/sdist and clean consumer validation are recorded in docs/VALIDATION.md.
+- CI declares Linux/macOS/Windows native reference/formal builds with installation consumers, plus Linux Python tests. CI is not hardware enrollment, OS authorization or application end-to-end evidence.

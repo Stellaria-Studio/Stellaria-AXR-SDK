@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.24)
+project(AXRConsumer LANGUAGES CXX)
+find_package(StellariaAXR 1 CONFIG REQUIRED)
+add_executable(axr-consumer main.cpp)
+target_link_libraries(axr-consumer PRIVATE Stellaria::AXR)

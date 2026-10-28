@@ -1,0 +1,8 @@
+Stellaria AXR SDK
+Copyright (c) 2026 Stellaria contributors
+
+SDK-owned source: AGPL-3.0-only OR LicenseRef-Stellaria-Commercial-1.0
+The AGPL-3.0-only path is available under LICENSE. The SCL alternative
+requires a separately effective commercial agreement; publishing the framework
+does not itself grant proprietary rights. Third-party and file-level notices
+remain in force. See LICENSES.md and THIRD_PARTY_NOTICES.md.

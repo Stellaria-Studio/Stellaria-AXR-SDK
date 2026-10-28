@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "imported_on": "2026-10-28",
+  "source": "Owner-supplied legal documents; original bytes preserved",
+  "documents": [
+    {
+      "source_file": "legal/originals/Stellaria_CLA_1.0.docx",
+      "source_sha256": "9cfb96a2e69537d766fba9f2500b307eadd848354a40d2b8a4f4608b4644e9af",
+      "readable_file": "legal/Stellaria-CLA-1.0.md",
+      "paragraphs": 64,
+      "paragraph_text_sha256": "75f34c1f91460bcad7ec1a98998ba81db52e2525e265569300512eaf2c5cf037",
+      "redlines": 0
+    },
+    {
+      "source_file": "legal/originals/Stellaria_Commercial_License_1.0.docx",
+      "source_sha256": "4174511ffbcd0cc3bae0b48b450a221ae869a72ab546bbec90a969b88bd5eb63",
+      "readable_file": "licenses/LicenseRef-Stellaria-Commercial-1.0.md",
+      "paragraphs": 76,
+      "paragraph_text_sha256": "395b1b8af3f6c7fedc1a4e9591282100cd2044adb4da83bc96fd2f12d0e4621a",
+      "redlines": 0
+    }
+  ]
+}
