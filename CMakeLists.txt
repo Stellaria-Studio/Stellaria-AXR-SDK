@@ -250,8 +250,9 @@ elseif(WIN32)
 endif()
 install(DIRECTORY include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 
-install(FILES LICENSE LICENSES.md NOTICE THIRD_PARTY_NOTICES.md DESTINATION ${CMAKE_INSTALL_DATADIR}/StellariaAXR)
+install(FILES LICENSE LICENSES.md NOTICE THIRD_PARTY_NOTICES.md CONTRIBUTING.md SECURITY.md DESTINATION ${CMAKE_INSTALL_DATADIR}/StellariaAXR)
 install(DIRECTORY licenses/ DESTINATION ${CMAKE_INSTALL_DATADIR}/StellariaAXR/licenses)
+install(DIRECTORY legal/ DESTINATION ${CMAKE_INSTALL_DATADIR}/StellariaAXR/legal)
 if(WIN32)
   # Standalone helper distributions include the resolved DLL licenses as well.
   foreach(dependency openssl sqlite3)
