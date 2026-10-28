@@ -9,10 +9,10 @@
 | 独立 Python SDK 测试 | 129 通过、4 平台条件跳过、28 子测试通过 |
 | CMake install → 独立 find_package 消费程序 | 配置、编译、执行通过 |
 | SCL/CLA 原始字节及完整转录 | 两份原始 DOCX 的 SHA-256 与提供文件一致，段落全文校验通过 |
-| Wheel / sdist | 从 sdist 构建 wheel；138 个源分发条目、87 个 wheel 条目检查通过，双授权元数据、SCL 和 CLA 随包包含 |
+| Wheel / sdist | 从 sdist 构建 wheel；138 个源分发条目、93 个 wheel 条目检查通过，双授权元数据、SCL/CLA 原件及转录随包包含 |
 | Wheel 独立环境消费 | 外部目录与隔离模式下验证安装包/原生模块路径、意图摘要和认证加密通过，未借用 checkout 的源码包 |
-| 原集成仓库兼容回归 | 598 通过、232 条件跳过、336 子测试通过；验证使用新原生模块的隔离运行环境 |
-| 新仓库 CI | 以对应提交的 GitHub Actions 结果为准，不以声明 workflow 代替通过 |
+| 原集成仓库兼容回归 | 合入后续远端 `14aeded`（无 AXR 源码变化）后，601 通过、240 条件跳过、340 子测试通过；验证使用新原生模块的隔离运行环境 |
+| 新仓库 CI | [594159b 的 7 项检查全部通过](https://github.com/Stellaria-Studio/Stellaria-AXR-SDK/actions/runs/40721874623)：Linux/macOS/Windows 参考与正式原生构建、测试、安装消费，以及 Linux Python；后续纯文档修订不改变所验代码 |
 
 ## Guard 并发与性能
 

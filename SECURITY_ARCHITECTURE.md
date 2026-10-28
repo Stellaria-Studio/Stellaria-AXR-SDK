@@ -1,7 +1,7 @@
 # Stellaria AXR · Security Architecture 2
 
 Status: development integration; formal release admission is closed.
-License: AGPL-3.0-only.
+License: AGPL-3.0-only OR LicenseRef-Stellaria-Commercial-1.0; see [licensing](LICENSES.md).
 
 Stellaria AXR provides application-independent control over authorized agent
 execution. Security Architecture 2 adds a unified authority service above the

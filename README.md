@@ -44,7 +44,7 @@ flowchart LR
 外部提交结果不确定时进入 **Unknown**，禁止自动重试。数据库观察、外部服务接受和最终送达
 是不同证据；AXR 不把本地记录包装成外部服务的 exactly-once 保证。
 
-## 五分钟开始
+## 开始集成
 
 需要 **CMake 3.24+、C++20 编译器、OpenSSL 3+、SQLite3**。
 Python 绑定需要 **Python 3.12+**。macOS 平台组件还需要 Swift 工具链。
