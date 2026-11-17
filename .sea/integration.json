@@ -1,0 +1,19 @@
+{
+  "schema": "stellaria.sea.integration.v2",
+  "date": "2026-11-17",
+  "sourceBaseline": "8fe52d3c246aa017e5b2df25d985115ef8a1998c",
+  "coreRepository": "Stellaria-Studio/Stellaria-SEA",
+  "coreCommit": "6207b585ffabb8d182432bb3a03ba4d0a5279aa6",
+  "coreRegression": {
+    "tests": 44,
+    "result": "PASS"
+  },
+  "projectContract": {
+    "localEmbeddedCi": "PASS",
+    "sourcePointers": "PASS",
+    "bootstrapCharacters": 1771,
+    "characterBudget": 1800
+  },
+  "legacyBytePreservation": [],
+  "scope": "Project knowledge and thin adapter only; no product execution/quality acceptance inferred."
+}

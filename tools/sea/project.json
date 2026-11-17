@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "name": "Stellaria-AXR-SDK",
+  "components": {
+    "project": {
+      "description": "Authorization, revocation and auditable execution for agent applications. C++20 and Python. AGPLv3 or Stellaria Commercial License.",
+      "paths": [
+        "src",
+        "include",
+        "native",
+        "scripts"
+      ],
+      "approved": [
+        "README.md"
+      ],
+      "required_files": [
+        "README.md"
+      ],
+      "build_targets": [],
+      "validation": [],
+      "pitfalls": [
+        "Keep the SDK application independent and preserve dual-license/third-party boundaries.",
+        "Never publish private keys, credentials, live databases or signed identity packets."
+      ],
+      "evidence": []
+    }
+  },
+  "build_metadata": [
+    "CMakeLists.txt",
+    "pyproject.toml"
+  ]
+}

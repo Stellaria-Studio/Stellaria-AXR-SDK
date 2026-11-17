@@ -8,3 +8,16 @@
 - Keep fixture and formal builds separate. Do not describe compilation, synthetic tests or CI as hardware/OS authorization or application qualification.
 - Test CMake build/install/consumer integration and Python packaging when changing distribution. Keep builds under ignored .local-build/.
 - Document purpose, validation and limitations in CHANGELOG.md; preserve prior work and never force-push without an explicit request.
+
+## SEA 2 project knowledge
+
+Use `sea_context` with this project's repository ID for a compact architecture
+bootstrap, then expand only the concept/source/test needed for the task. Shared
+runtime belongs to `Stellaria-Studio/Stellaria-SEA`; this repository owns
+`.sea/` and `tools/sea/project.json`. The local CLI adapter is
+`python3 tools/sea/stellaria-sea/scripts/sea.py context bootstrap`.
+SEA is an optional knowledge runtime: no identity binding, approval workflow,
+agent/model control or build prerequisite. Keep objectives and unfinished
+requirements in local task capsules when useful. Source, actual tests and
+product quality evidence remain authoritative; a knowledge query proves no
+acceptance. See `.sea/README.md` for installation and legacy compatibility.

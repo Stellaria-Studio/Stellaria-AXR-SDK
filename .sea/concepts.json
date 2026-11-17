@@ -1,0 +1,57 @@
+[
+  {
+    "id": "project-architecture",
+    "name": "Stellaria-AXR-SDK architecture",
+    "aliases": [
+      "Stellaria-AXR-SDK",
+      "AXR-SDK",
+      "架构",
+      "职责"
+    ],
+    "intent": "Authorization, revocation and auditable execution for agent applications. C++20 and Python. AGPLv3 or Stellaria Commercial License.",
+    "qualification": "DECLARED_PROJECT_KNOWLEDGE",
+    "invariants": [
+      "Keep the SDK application independent and preserve dual-license/third-party boundaries.",
+      "Never publish private keys, credentials, live databases or signed identity packets."
+    ],
+    "implementationPaths": [
+      "src",
+      "include",
+      "native",
+      "scripts"
+    ],
+    "dependsOn": [],
+    "acceptanceGates": [
+      "source identity",
+      "declared validation is not execution evidence"
+    ],
+    "sources": [
+      {
+        "path": "README.md",
+        "line": 1,
+        "commit": "8fe52d3c246aa017e5b2df25d985115ef8a1998c"
+      },
+      {
+        "path": "SECURITY_ARCHITECTURE.md",
+        "line": 1,
+        "commit": "8fe52d3c246aa017e5b2df25d985115ef8a1998c"
+      }
+    ],
+    "validation": [
+      "cmake --build .local-build/dev --parallel 4",
+      "ctest --test-dir .local-build/dev --output-on-failure"
+    ],
+    "validationSources": [
+      {
+        "path": "README.md",
+        "line": 57,
+        "commit": "8fe52d3c246aa017e5b2df25d985115ef8a1998c"
+      },
+      {
+        "path": "README.md",
+        "line": 58,
+        "commit": "8fe52d3c246aa017e5b2df25d985115ef8a1998c"
+      }
+    ]
+  }
+]

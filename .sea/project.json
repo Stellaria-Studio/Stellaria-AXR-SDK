@@ -1,0 +1,36 @@
+{
+  "schema": "stellaria.sea.project.v2",
+  "id": "Stellaria-Studio/Stellaria-AXR-SDK",
+  "name": "Stellaria-AXR-SDK",
+  "repository": "Stellaria-Studio/Stellaria-AXR-SDK",
+  "defaultBranch": "main",
+  "tier": "C",
+  "profile": "knowledge-runtime",
+  "purpose": "Authorization, revocation and auditable execution for agent applications. C++20 and Python. AGPLv3 or Stellaria Commercial License.",
+  "visibility": "public",
+  "concepts": ".sea/concepts.json",
+  "invariants": [
+    "Keep the SDK application independent and preserve dual-license/third-party boundaries.",
+    "Never publish private keys, credentials, live databases or signed identity packets."
+  ],
+  "runtime": {
+    "repository": "Stellaria-Studio/Stellaria-SEA",
+    "version": "2.0.0",
+    "protocol": 2,
+    "sourceCommit": "6207b585ffabb8d182432bb3a03ba4d0a5279aa6"
+  },
+  "legacy": {
+    "definition": "tools/sea/project.json",
+    "history": "read-only; preserve original bytes"
+  },
+  "features": {
+    "contextBroker": true,
+    "architectureRegistry": true,
+    "localTaskCapsules": true,
+    "identityBinding": false,
+    "approvalWorkflow": false,
+    "enforcement": false,
+    "automaticPush": false
+  },
+  "sourceBaseline": "8fe52d3c246aa017e5b2df25d985115ef8a1998c"
+}

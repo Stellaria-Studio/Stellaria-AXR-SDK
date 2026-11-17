@@ -11,3 +11,10 @@
 - Local validation: native reference and formal profiles each passed 3/3 CTests; Python SDK tests passed 129 with 4 platform skips and 28 subtests. macOS helper/embedded-host compilation and installed CMake consumer execution passed. Legal source verification passed. Wheel/sdist and clean consumer validation are recorded in docs/VALIDATION.md.
 - [All seven CI jobs passed for 594159b](https://github.com/Stellaria-Studio/Stellaria-AXR-SDK/actions/runs/40721874623): Linux/macOS/Windows native reference/formal builds, tests and installation consumers, plus Linux Python tests. Subsequent documentation corrections do not alter the tested code. CI is not hardware enrollment, OS authorization or application end-to-end evidence.
 - Distribution validation built a wheel from the sdist, checked dual-license metadata and agreement inclusion, and exercised the installed wheel in an isolated consumer directory. After integrating upstream `14aeded` (no SDK source changes), integration regression with the new native module passed 601 tests, skipped 240 platform conditions and passed 340 subtests. Its Windows-only native mocks were made explicit on non-Windows, while Windows still requires real exports.
+
+## 2026-11-17 · SEA 2 knowledge integration
+
+Add project-owned source-pinned architecture metadata, a thin adapter to the
+separate private SEA core, and credential-free metadata CI. SDK behavior and
+distribution are unchanged. Validation covers schema and Git source pointers;
+this does not assert hardware or application qualification.
